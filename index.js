@@ -1,19 +1,22 @@
-// let totalCount = document.getElementById("counter");
-// var count = 0;
-// let e ; 
+let totalCount = document.getElementById("counter");
+var count = 0;
+totalCount.innerHTML = window.sessionStorage.getItem('totalCount' ) || 0 ;
+let Increment = () => {
+  count++;
+  window.sessionStorage.setItem('totalCount',count);
+  totalCount.innerHTML = sessionStorage.getItem('totalCount');
+};
 
-// totalCount.innerHTML = window.sessionStorage.getItem('totalCount' ) || 0 ;
-// let Increment = (e) => {
-//   count++;
-//   window.sessionStorage.setItem('totalCount',count);
-//   totalCount.innerHTML = sessionStorage.getItem('totalCount');
-// };
+// Select increment and decrement buttons
+let incrementCount = document.getElementsByClassName('buy');
+for(i=0 ; i<incrementCount.length ; i++){
+  incrementCount[i].addEventListener("click",Increment)
+}
 
-// // Select increment and decrement buttons
-// let incrementCount = document.getElementsByClassName('buy');
-// for(i=0 ;i<incrementCount.length ; i++){
-//   incrementCount[i].addEventListener("click",Increment(e))
-// }
+
+
+// function eventIncrement()
+// incrementCount.addEventListener('click' ,Increment())
 //    {
 //     let target = e.target 
 //     let shop = target.parentElement
@@ -23,9 +26,7 @@
 
 //     var imgsrc = shop.getElementsByClassName('productPic') [0] .src ;
 //     console.log('imgsrc')
-// }
-// function eventIncrement(event)
-// incrementCount.addEventListener('click' ,Increment(event))
+
 
 
 let slideIndex = [1,1];
@@ -207,12 +208,4 @@ function displayCart(){
   document.getElementById('allBody').style.display = 'none' ;
   document.getElementById('allBody').style.background = '#ce3c83' ;
 }
-
-
-// function displayCart(){
-//   let x = document.getElementsByClassName('allbody') ;
-//   x[0].style.display = 'none';
-
-// }
-
 
