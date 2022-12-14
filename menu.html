@@ -2,290 +2,317 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/c89f2275fd.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Raleway:ital,wght@0,100;0,200;1,100&family=Roboto+Slab:wght@300;400&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Bekary</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/c89f2275fd.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Raleway:ital,wght@0,100;0,200;1,100&family=Roboto+Slab:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Bekary</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="logo" src="images/main-logo.png" alt="" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contacts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link tab" href="./menu.html">Menu</a>
-                    </li>
-                    <div class="cart">
-                        <li class="nav-item">
-                            <a style="text-decoration: none;">
-                                <i class="fa-solid fa-cart-shopping cartIcon" onclick="displayCart()" id="carticonn"></i>
-                            </a>
-                            <span id="counter" class="counter"> 0</span>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body id="top">
+  <a class="top" href="#top">
+    <button class="button20" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+  </a>
+
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo" src="images/main-logo.png" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tab" href="./menu.html">Menu</a>
+          </li>
+          <div class="cart">
+            <li class="nav-item">
+              <a style="text-decoration: none;">
+                <i class="fa-solid fa-cart-shopping cartIcon" onclick="displayCart()" id="carticonn"></i>
+              </a>
+              <span id="counter" class="counter"> 0</span>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+
+  <div class="allBody" id="allBody">
 
     <div class="About-Banner">
-        <h1 class="about-heading"> Menu </h1>
+      <h1 class="about-heading"> Menu </h1>
     </div>
 
-    
-  <div class="thirdPart">
-    <h1 class="heading2"> Order Now</h1>
 
-    <div class="bestProducts">
-      <div class="product">
-        <img src="images/cake-item1.jpg" class="productPic" >
-        <h5 class="proName">Black Forest Pastry</h5>
-        <p class="section">Cake - Pastries</p>
-        <span class="price">$19 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
+    <div class="thirdPart">
+      <h1 class="heading2"> Order Now</h1>
+      <div id="confirm">
+        <div class="message">Item added successfully!</div><br>
       </div>
 
-      <div class="product">
-        <img src="images/cake-item2.jpg" class="productPic" >
-        <h5 class="proName">Sprinkled Donuts</h5>
-        <p class="section">Cake - Pastries</p>
-        <span class="price">$15 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
-      </div>
-      <div class="product">
-        <img src="images/cake-item4.jpg" class="productPic" >
-        <h5 class="proName">Macarons with Berries</h5>
-        <p class="section">Cake - Pastries</p>
-        <span class="price">$22 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
-      </div>
+      <div class="bestProducts">
+        <div class="product">
+          <img src="images/cake-item1.jpg" class="productPic">
+          <h5 class="proName">Black Forest Pastry</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$19 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
+        </div>
 
-      <div class="product">
-        <img class="productPic" src="images/cake-item3.jpg" >
-        <h5 class="proName">Black Forest Cupcake</h5>
-        <p class="section">Cake - Pastries</p>
-        <span class="price">$27 <i class="fa-solid fa-cart-shopping buy" id="buy"></i> </span>
-      </div>
-    </div>
-    
-    <div class="bestProducts">
         <div class="product">
-          <img src="images/tabimg21.jpg" class="productPic" >
-          <h5 class="proName">Cupcakes</h5>
+          <img src="images/cake-item2.jpg" class="productPic">
+          <h5 class="proName">Sprinkled Donuts</h5>
           <p class="section">Cake - Pastries</p>
-          <span class="price">$16 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
-        </div>
-  
-        <div class="product">
-          <img src="images/cupp.jpeg" class="productPic" >
-          <h5 class="proName">Celebration Cake</h5>
-          <p class="section">Cake - Pastries</p>
-          <span class="price">$34 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
+          <span class="price">$15 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
         </div>
         <div class="product">
-          <img src="images/sprinkleddonutsq.jpg" class="productPic" >
-          <h5 class="proName">Chocolate Cupcakes</h5>
+          <img src="images/cake-item4.jpg" class="productPic">
+          <h5 class="proName">Macarons with Berries</h5>
           <p class="section">Cake - Pastries</p>
-          <span class="price">$32 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
+          <span class="price">$22 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
         </div>
-  
+
         <div class="product">
-          <img class="productPic" src="images/R (4).jpeg" >
-          <h5 class="proName">croissant</h5>
-          <p class="section">Bakery</p>
-          <span class="price">$12 <i class="fa-solid fa-cart-shopping buy" id="buy"></i> </span>
+          <img class="productPic" src="images/cake-item3.jpg">
+          <h5 class="proName">Black Forest Cupcake</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$27 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i> </span>
         </div>
       </div>
 
       <div class="bestProducts">
         <div class="product">
-          <img src="images/R (6).jpeg" class="productPic" >
-          <h5 class="proName">Macarons</h5>
+          <img src="images/tabimg21.jpg" class="productPic">
+          <h5 class="proName">Cupcakes</h5>
           <p class="section">Cake - Pastries</p>
-          <span class="price">$15 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
+
+          <span class="price">$16 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
         </div>
-  
+
         <div class="product">
-            <img src="images/cake-item1.jpg" class="productPic" >
-            <h5 class="proName">Chocolate Cake</h5>
+          <img src="images/cupp.jpeg" class="productPic">
+          <h5 class="proName">Celebration Cake</h5>
           <p class="section">Cake - Pastries</p>
-          <span class="price">$25<i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
+          <span class="price">$34 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
         </div>
         <div class="product">
-          <img src="images/cake-item4.jpg" class="productPic" >
-          <h5 class="proName">Macarons with Berries</h5>
+          <img src="images/sprinkleddonutsq.jpg" class="productPic">
+          <h5 class="proName">Chocolate Cupcakes</h5>
           <p class="section">Cake - Pastries</p>
-          <span class="price">$22 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
+          <span class="price">$32 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
         </div>
-  
+
         <div class="product">
-          <img class="productPic" src="images/cake-item3.jpg" >
-          <h5 class="proName">Black Forest Cupcake</h5>
-          <p class="section">Cake - Pastries</p>
-          <span class="price">$27 <i class="fa-solid fa-cart-shopping buy" id="buy"></i> </span>
+          <img class="productPic" src="images/R (4).jpeg">
+          <h5 class="proName">croissant</h5>
+          <p class="section">Bakery</p>
+          <span class="price">$12 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i> </span>
         </div>
       </div>
-      
-  <div class="bestProducts">
-    <div class="product">
-      <img src="images/cake-item1.jpg" class="productPic" >
-      <h5 class="proName">Black Forest Pastry</h5>
-      <p class="section">Cake - Pastries</p>
-      <span class="price">$19 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
-    </div>
 
-    <div class="product">
-      <img src="images/cake-item2.jpg" class="productPic" >
-      <h5 class="proName">Sprinkled Donuts</h5>
-      <p class="section">Cake - Pastries</p>
-      <span class="price">$15 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
-    </div>
-    <div class="product">
-      <img src="images/blog-postt.jpg" class="productPic" >
-      <h5 class="proName">Milk Cake</h5>
-      <p class="section">Cake - Pastries</p>
-      <span class="price">$18 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
-    </div>
+      <div class="bestProducts">
+        <div class="product">
+          <img src="images/R (6).jpeg" class="productPic">
+          <h5 class="proName">Macarons</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$15 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
+        </div>
 
-    <div class="product">
-      <img class="productPic" src="images/R (9).jpeg" >
-      <h5 class="proName">Baton Sale</h5>
-      <p class="section">Bakery</p>
-      <span class="price">$10<i class="fa-solid fa-cart-shopping buy" id="buy"></i> </span>
+        <div class="product">
+          <img src="images/cake-item1.jpg" class="productPic">
+          <h5 class="proName">Chocolate Cake</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$25<i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
+        </div>
+        <div class="product">
+          <img src="images/cake-item4.jpg" class="productPic">
+          <h5 class="proName">Macarons with Berries</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$22 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
+        </div>
+
+        <div class="product">
+          <img class="productPic" src="images/cake-item3.jpg">
+          <h5 class="proName">Black Forest Cupcake</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$27 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i> </span>
+        </div>
+      </div>
+
+      <div class="bestProducts">
+        <div class="product">
+          <img src="images/cake-item1.jpg" class="productPic">
+          <h5 class="proName">Black Forest Pastry</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$19 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
+        </div>
+
+        <div class="product">
+          <img src="images/cake-item2.jpg" class="productPic">
+          <h5 class="proName">Sprinkled Donuts</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$15 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
+        </div>
+        <div class="product">
+          <img src="images/blog-postt.jpg" class="productPic">
+          <h5 class="proName">Milk Cake</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$18 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
+        </div>
+
+        <div class="product">
+          <img class="productPic" src="images/R (9).jpeg">
+          <h5 class="proName">Baton Sale</h5>
+          <p class="section">Bakery</p>
+          <span class="price">$10<i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i> </span>
+        </div>
+      </div>
+
+
+      <div class="bestProducts">
+        <div class="product">
+          <img src="images/OIP (3).jpeg" class="productPic">
+          <h5 class="proName">cookies chocolate chip</h5>
+          <p class="section">Bakery</p>
+          <span class="price">$32 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
+        </div>
+
+        <div class="product">
+          <img src="images/R (8).jpeg" class="productPic">
+          <h5 class="proName">Brawnies</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$21 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
+        </div>
+        <div class="product">
+          <img src="images/OIPP (5).jpeg" class="productPic">
+          <h5 class="proName">Walnuts Cheese Cake</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$28 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i></span>
+        </div>
+
+        <div class="product">
+          <img class="productPic" src="images/OIPP (4).jpeg">
+          <h5 class="proName">Berries Cheese Cake</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$30 <i class="fa-solid fa-cart-shopping buy" onclick="functionAlert();"></i> </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="cartPart" id="cart">
+    <p class="Name" id="proName"> </p>
+    <img class="productPic" id="productPic">
+
+    <div class="totalPrice">
+      <p class="total" id="total"> </p>
+
     </div>
   </div>
 
-  
-  <div class="bestProducts">
-    <div class="product">
-      <img src="images/OIP (3).jpeg" class="productPic" >
-      <h5 class="proName">cookies chocolate chip</h5>
-      <p class="section">Bakery</p>
-      <span class="price">$32 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
-    </div>
 
-    <div class="product">
-      <img src="images/R (8).jpeg" class="productPic" >
-      <h5 class="proName">Brawnies</h5>
-      <p class="section">Cake - Pastries</p>
-      <span class="price">$21 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
-    </div>
-    <div class="product">
-      <img src="images/OIPP (5).jpeg" class="productPic" >
-      <h5 class="proName">Walnuts Cheese Cake</h5>
-      <p class="section">Cake - Pastries</p>
-      <span class="price">$28 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
-    </div>
-
-    <div class="product">
-      <img class="productPic" src="images/OIPP (4).jpeg" >
-      <h5 class="proName">Berries Cheese Cake</h5>
-      <p class="section">Cake - Pastries</p>
-      <span class="price">$30 <i class="fa-solid fa-cart-shopping buy" id="buy"></i> </span>
-    </div>
-  </div>
-
-  </div>
-
-
-    <footer>
-        <div class="part1">
-            <div class="loggo" style="padding-left: 17%; padding-top: 2%; ">
-                <div class="footor-logo">
-                    <img class="logoimg" src="./images/baker.png" alt="">
-                </div>
-                <div class="footor-logo">
-                    <img class="logoimg" src="./images/bakery.png" alt="">
-                </div>
-                <div class="footor-logo">
-                    <img class="logoimg" src="./images/thebakery.png" alt="">
-                </div>
-                <div class="footor-logo">
-                    <img class="logoimg" src="./images/breadcookies.png" alt="">
-                </div>
-                <div class="footor-logo">
-                    <img class="logoimg" src="./images/bakery.png" alt="">
-                </div>
-            </div>
-
+  <footer>
+    <div class="part1">
+      <div class="loggo" style="padding-left: 17%; padding-top: 2%; ">
+        <div class="footor-logo">
+          <img class="logoimg" src="./images/baker.png" alt="">
         </div>
-        <div class="part2">
-            <div class="sections sec1">
-                <img src="images/main-logo.png" alt="" />
-                <p class="parg"> You Can't be sad when You're Holding A Cup cake</p>
-            </div>
-            <div class="sections">
-                <h4 style="color: #ce3c83; ">Subscribe To Our Newletter </h4>
-                <div class="input-group mb-2">
-                    <input type="email" class="form-control" placeholder="Your Email Address"
-                        aria-label="Your Email Address" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button"
-                            style="background-color:#ce3c83 ; border: none; color: white;">Subscribe</button>
-                    </div>
-                </div>
-                <h4 style="color: #ce3c83; padding-top: 9%; padding-bottom: 2%; ">Our Work Time</h4>
-                <div class="fot">
-                    <div class="rig">
-                        <p style="color: #484748;"> Monday - Friday </p>
-                        <p style="color: #484748;">8:00am - 8:30 pm</p>
-                    </div>
-                    <div class="rig">
-                        <p style="color: #484748;">Saturday - Sunday</p>
-                        <p style="color: #484748;">10:00am - 16:00 pm </p>
-                    </div>
-                </div>
+        <div class="footor-logo">
+          <img class="logoimg" src="./images/bakery.png" alt="">
+        </div>
+        <div class="footor-logo">
+          <img class="logoimg" src="./images/thebakery.png" alt="">
+        </div>
+        <div class="footor-logo">
+          <img class="logoimg" src="./images/breadcookies.png" alt="">
+        </div>
+        <div class="footor-logo">
+          <img class="logoimg" src="./images/bakery.png" alt="">
+        </div>
+      </div>
 
-
-            </div>
-            <div class="sections">
-                <h4 style="color: #ce3c83; padding-top: 9%; padding-left: 40%; padding-bottom: 2%;"> Quick Links </h4>
-
-
-            </div>
-
+    </div>
+    <div class="part2">
+      <div class="sections sec1">
+        <img src="images/main-logo.png" alt="" />
+        <p class="parg"> You Can't be sad when You're Holding A Cup cake</p>
+      </div>
+      <div class="sections">
+        <h4 style="color: #ce3c83; ">Subscribe To Our Newletter </h4>
+        <div class="input-group mb-2">
+          <input type="email" class="form-control" placeholder="Your Email Address" aria-label="Your Email Address"
+            aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button"
+              style="background-color:#ce3c83 ; border: none; color: white;">Subscribe</button>
+          </div>
+        </div>
+        <h4 style="color: #ce3c83; padding-top: 9%; padding-bottom: 2%; ">Our Work Time</h4>
+        <div class="fot">
+          <div class="rig">
+            <p style="color: #484748;"> Monday - Friday </p>
+            <p style="color: #484748;">8:00am - 8:30 pm</p>
+          </div>
+          <div class="rig">
+            <p style="color: #484748;">Saturday - Sunday</p>
+            <p style="color: #484748;">10:00am - 16:00 pm </p>
+          </div>
         </div>
 
-        </div>
-        <div class="visa">
-          <div style=" margin-left: 8%;"><i class="fa-regular fa-copyright"></i> <span style="color:#707279;"> 2022 Bakery by Toqa Mohamed</span></div>
-          <div style="margin-right:19%; color:#707279;"> we accept : &nbsp<span><img src="./images/visa.png" style="width: 26px;"></span> <span><img src="./images/master-card.png" style="width: 26px;"></span> <span><img src="./images/american-express.png" style="width: 26px;"></span> </div>
-        </div>
-    </footer>
-    <script src="index.js"></script>
-    
+
+      </div>
+      <div class="sections">
+        <h4 style="color: #ce3c83; padding-top: 9%; padding-left: 40%; padding-bottom: 2%;"> Quick Links </h4>
+
+
+      </div>
+
+    </div>
+
+    </div>
+    <div class="visa">
+      <div style=" margin-left: 8%;"><i class="fa-regular fa-copyright"></i> <span style="color:#707279;"> 2022 Bakery
+          by Toqa Mohamed</span></div>
+      <div style="margin-right:19%; color:#707279;"> we accept : &nbsp<span><img src="./images/visa.png"
+            style="width: 26px;"></span> <span><img src="./images/master-card.png" style="width: 26px;"></span>
+        <span><img src="./images/american-express.png" style="width: 26px;"></span> </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 </body>
 
 </html>
