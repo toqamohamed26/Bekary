@@ -27,16 +27,11 @@
 
 </head>
 
-<body>
-  <!-- <img class="logo" src="images/main-logo.png" alt="">
-    <nav>
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#news">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav> -->
+<body id="top">
+  <a class="top" href="#top">
+    <button class="button20" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+  </a>
+  
   <nav class="navbar navbar-expand-sm">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img class="logo" src="images/main-logo.png" alt="" /></a>
@@ -49,7 +44,7 @@
             <a class="nav-link tab" href="./index.html" onclick="Home()" id="Home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./about.html" onclick="About();" id="About" >About</a>
+            <a class="nav-link" href="./about.html" onclick="About();" id="About">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./blog.html" onclick="Blog();" id="Blog">Blog</a>
@@ -61,9 +56,9 @@
             <a class="nav-link" href="./menu.html" onclick="Menu();" id="Menu"> Menu</a>
           </li>
           <div class="cart">
-            <li class="nav-item"  >
-              <a style="text-decoration: none;"  >
-                <i class="fa-solid fa-cart-shopping cartIcon" onclick="displayCart()" id="carticonn"></i> 
+            <li class="nav-item">
+              <a style="text-decoration: none;">
+                <i class="fa-solid fa-cart-shopping cartIcon" onclick="displayCart()" id="carticonn"></i>
               </a>
               <span id="counter" class="counter"> 0</span>
             </li>
@@ -73,217 +68,231 @@
     </div>
   </nav>
 
-<div id="allBody" class="allBody">
-  <div class="slideshow-container" >
-    <div class="mySlides1">
-      <div class="above">
-        <h6 class="fresh">- FRESHLY BAKED EVERY MORNING</h6>
-        <h1 class="delicious">delicious cupcakes for you</h1>
-        <p class="gorgeous">A gorgeous selection of our favorites for a client to send as a new year’s gift.A gorgeous selection of our favorites for a client to send as a new year’s gift</p>
-        <a href="./menu.html">
-          <button class="button12" >Order Now</button>
-          </a> 
+  <div id="allBody" class="allBody">
+    <div class="slideshow-container">
+      <div class="mySlides1">
+        <div class="above">
+          <h6 class="fresh">- FRESHLY BAKED EVERY MORNING</h6>
+          <h1 class="delicious">delicious cupcakes for you</h1>
+          <p class="gorgeous">A gorgeous selection of our favorites for a client to send as a new year’s gift.A gorgeous
+            selection of our favorites for a client to send as a new year’s gift</p>
+          <a href="./menu.html">
+            <button class="button12">Order Now</button>
+          </a>
+        </div>
+        <img src="images/banner1.jpg" style="width:100% ;">
       </div>
-      <img src="images/banner1.jpg" style="width:100% ;">
-    </div>
-  
-    <div class="mySlides1">
-      <img src="images/banner2.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides1">
-      <img src="images/R (3).jpeg" style="width:100%">
-    </div>
-  
-    <a class="prev" onclick="plusSlides(-1, 0)"><i class='fas fa-angle-left'></i></a>
-    <a class="next" onclick="plusSlides(1, 0)"><i class='fas fa-angle-right'></i></a>
-  </div>
 
-  <h1 class="heading1"> About </h1>
+      <div class="mySlides1">
+        <img src="images/banner2.jpg" style="width:100%">
+      </div>
 
-  <div class="second_part">
+      <div class="mySlides1">
+        <img src="images/R (3).jpeg" style="width:100%">
+      </div>
 
-    <div class="main" id="content">
-      <a class="content open" onclick="mission()" id="mission">
-        Our Mission
+      <a class="prev" onclick="plusSlides(-1, 0)"><i class='fas fa-angle-left'></i></a>
+      <a class="next" onclick="plusSlides(1, 0)"><i class='fas fa-angle-right'></i></a>
+    </div>
+
+    <h1 class="heading1"> About </h1>
+
+    <div class="second_part">
+
+      <div class="main" id="content">
+        <a class=" open" onclick="mission()" id="mission">
+          Our Mission
+        </a>
+        <a class="content" onclick="value();" id="value">Our Value</a>
+        <a class="content" onclick="goal()" id="goal">Our Goal</a>
+      </div>
+    </div>
+    <div class="info">
+
+      <div class="imgInfo"><img class="image " src="images/tabimg.jpg" alt="Banner" id="tabImg" /></div>
+      <div class="mainInfo" id="info">
+        <h5 class="mb1">
+          A gorgeous selection of our favorites for a client to send as a new year’s gift. </h5>
+        <p class="con1">
+          I love to make pies - pot pies, quiches, savory tarts, fruit pies. I use an old-fashioned pastry blender with
+          wires and a wooden handle. I never use a recipe. I love to make pies - pot pies, quiches, savory tarts, fruit
+          pies.</p>
+        <p class="con1">
+          A gorgeous selection of our favorites for a client to send as a new
+          year’s gift.
+        </p>
+        <button class="button0">Reed More</button>
+      </div>
+    </div>
+
+
+    <!-- 3th part  -->
+
+    <div class="thirdPart">
+      <h1 class="heading2"> Best Products</h1>
+
+      <div class="bestProducts">
+        <div class="product">
+          <img src="images/cake-item1.jpg" class="productPic">
+          <h5 class="proName">Black Forest Pastry</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$12 </span>
+        </div>
+
+        <div class="product">
+          <img src="images/cake-item2.jpg" class="productPic">
+          <h5 class="proName">Sprinkled Donuts</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$12 </span>
+        </div>
+        <div class="product">
+          <img src="images/cake-item4.jpg" class="productPic">
+          <h5 class="proName">Macarons with Berries</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$12</span>
+        </div>
+
+        <div class="product">
+          <img class="productPic" src="images/cake-item3.jpg">
+          <h5 class="proName">Black Forest Cupcake</h5>
+          <p class="section">Cake - Pastries</p>
+          <span class="price">$12 </span>
+        </div>
+      </div>
+
+      <a href="./menu.html">
+        <button class="button3">Shop Now</button>
       </a>
-      <a class="content" onclick="value();" id="value">Our Value</a>
-      <a class="content" onclick="goal()" id="goal">Our Goal</a>
     </div>
-  </div>
-  <div class="info">
+    <div class="forthPart">
+      <div class="text">
+        <h2> Our Special Chocolate Mousse</h2>
+        <p style="margin-top: 5%;"> All of our products are made from scratch using family recipes with the highest
+          quality ingredients. We bake and sell fresh daily to ensure only the best products are sold to our customers.
+        </p>
 
-    <div class="imgInfo"><img class="image " src="images/tabimg.jpg" alt="Banner" id="tabImg" /></div>
-    <div class="mainInfo" id="info">
-      <h5 class="mb">
-        A gorgeous selection of our favorites for a client to send as a new year’s gift. </h5>
-      <p class="con">
-        A gorgeous selection of our favorites for a client to send as a new
-        year’s gift. A gorgeous selection of our favorites for a client to
-        send as a new year’s gift. A gorgeous selection of our favorites for a
-        client to send as a new year’s gift.
-      </p>
-      <p class="con">
-        A gorgeous selection of our favorites for a client to send as a new
-        year’s gift.
-      </p>
-      <button class="button1" id="btj">Reed More</button>
-    </div>
-  </div>
-
-
-  <!-- 3th part  -->
-
-  <div class="thirdPart">
-    <h1 class="heading2"> Best Products</h1>
-
-    <div class="bestProducts">
-      <div class="product">
-        <img src="images/cake-item1.jpg" class="productPic" >
-        <h5 class="proName">Black Forest Pastry</h5>
-        <p class="section">Cake - Pastries</p>
-        <span class="price">$12 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
-      </div>
-
-      <div class="product">
-        <img src="images/cake-item2.jpg" class="productPic" >
-        <h5 class="proName">Sprinkled Donuts</h5>
-        <p class="section">Cake - Pastries</p>
-        <span class="price">$12 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
-      </div>
-      <div class="product">
-        <img src="images/cake-item4.jpg" class="productPic" >
-        <h5 class="proName">Macarons with Berries</h5>
-        <p class="section">Cake - Pastries</p>
-        <span class="price">$12 <i class="fa-solid fa-cart-shopping buy" id="buy"></i></span>
-      </div>
-
-      <div class="product">
-        <img class="productPic" src="images/cake-item3.jpg" >
-        <h5 class="proName">Black Forest Cupcake</h5>
-        <p class="section">Cake - Pastries</p>
-        <span class="price">$12 <i class="fa-solid fa-cart-shopping buy" id="buy"></i> </span>
+        <button class="button2"> Shop Now</button>
       </div>
     </div>
-    
+    <div class="bekary">
+      <div class="bekText">
+        <h1 class="bakerySection"> Bakery </h1>
 
-  </div>
-<div class="forthPart">
-  <div class="text">
-    <h2 > Our Special Chocolate Mousse</h2>
-    <p style="margin-top: 5%;"> All of our products are made from scratch using family recipes with the highest quality ingredients. We bake and sell fresh daily to ensure only the best products are sold to our customers.
-    </p>
-
-    <button class="button2" > Shop Now</button>
-  </div>
-</div>
-<div class="bekary">
-  <div class="bekText">
-    <h1 class="bakerySection"> Bakery  </h1>
-    
-    <div class="rate"><img src="./images/star.png" style="width:16px;"> <span><img src="./images/star.png" style="width:16px;"></span> <span><img src="./images/star.png" style="width: 16px;"></span> <span><img src="./images/star.png" style="width: 16px;"></span> <span><img src="./images/star.png" style="width: 16px;"></span></div>
-    <div>
-      <h4 class="bakeryquotes" id="bakeryquotes">"Happiness is baking cookies. Happiness is giving them away...and serving them, and eating them, talking about them, reading and writing about them, thinking about them, and sharing them with you."</h4>
-      <img src="./images/default.png" class="defLogo">
-    </div>
-  <div class="dots">
-    <span class="activeDot" onclick="Quote1()" id="dot1"></span>
-    <span class="dot" onclick="Quote2()" id="dot2"></span>
-    <span class="dot" onclick="Quote3()" id="dot3"></span>
-  </div>
-  </div>
-
-    <!-- We’ve got everything from cute dessert quotes to snarky ones, inspirational ones that really make you think (life is short, eat dessert first!) to short and snappy captions that truly profess your love of dessert to the world. -->
-
-</div>
-
-
-
-<div class="fifthPart">
-  <h1 style="display: flex; justify-content: center;" > Latest Blogs </h1>
-<div class="textt">
-  <div class="leftone">
-    <div class="texxtt">
-    <h6 style="background-color: #ce3c83; width: 22%; color: white; margin-top: 60%; margin-left: 7%; padding-left: 5px; padding-right: px;">
-      March 10, 2020
-    </h6>
-    <h3 style="color: #fffff9; margin-top:5%; margin-left: 7%; opacity: 1;">
-      How to Make a Cake with Great Delicious Chocolate
-    </h3></div>
-  </div>
-  <div class="rigt">
-    <div class="one" > <img src="./images/postLong.jpg" alt=""></div>
-   <div class="two"><img src="./images/postLong.jpg" alt=""></div>
-  </div>
-</div>
-<a href="./blog.html">
-<button class="button3" >Reed More</button>
-</a>
-</div>
-
-</div>
-<footer>
-  <div class="part1">
-    <div class="loggo" style="padding-left: 17%; padding-top: 2%; ">
-      <div class="footor-logo">
-      <img class="logoimg" src="./images/baker.png" alt="">
-    </div>
-    <div class="footor-logo">
-      <img class="logoimg" src="./images/bakery.png" alt="">
-    </div>
-    <div class="footor-logo">
-      <img class="logoimg" src="./images/thebakery.png" alt="">
-    </div>
-    <div class="footor-logo">
-      <img class="logoimg" src="./images/breadcookies.png" alt="">
-    </div>
-    <div class="footor-logo">
-      <img class="logoimg" src="./images/bakery.png" alt="">
-    </div>
-  </div>
-    
-  </div>
-  <div class="part2">
-    <div class="sections sec1">
-<img src="images/main-logo.png" alt="" />
-<p class="parg" > You Can't be sad when You're Holding A Cup cake</p>
-    </div>
-    <div class="sections">
-      <h4 style="color: #ce3c83; ">Subscribe To Our Newletter </h4>
-      <div class="input-group mb-2">
-        <input type="email" class="form-control" placeholder="Your Email Address" aria-label="Your Email Address" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" style="background-color:#ce3c83 ; border: none; color: white;">Subscribe</button>
+        <div class="rate"><img src="./images/star.png" style="width:16px;"> <span><img src="./images/star.png"
+              style="width:16px;"></span> <span><img src="./images/star.png" style="width: 16px;"></span> <span><img
+              src="./images/star.png" style="width: 16px;"></span> <span><img src="./images/star.png"
+              style="width: 16px;"></span></div>
+        <div>
+          <h4 class="bakeryquotes" id="bakeryquotes">"Happiness is baking cookies. Happiness is giving them away...and
+            serving them, and eating them, talking about them, reading and writing about them, thinking about them, and
+            sharing them with you."</h4>
+          <img src="./images/default.png" class="defLogo">
+        </div>
+        <div class="dots">
+          <span class="activeDot" onclick="Quote1()" id="dot1"></span>
+          <span class="dot" onclick="Quote2()" id="dot2"></span>
+          <span class="dot" onclick="Quote3()" id="dot3"></span>
         </div>
       </div>
-      <h4 style="color: #ce3c83; padding-top: 9%; padding-bottom: 2%; ">Our Work Time</h4> 
-      <div class="fot">
-        <div class="rig">
-      <p style="color: #484748;"> Monday - Friday </p>
-      <p style="color: #484748;">8:00am - 8:30 pm</p>
-        </div>
-        <div class="rig">
-          <p style="color: #484748;">Saturday - Sunday</p>
-      <p style="color: #484748;">10:00am - 16:00 pm </p>
-        </div>
-      </div>
-      
+
 
     </div>
-    <div class="sections">
-      <h4 style="color: #ce3c83; padding-top: 9%; padding-left: 40%; padding-bottom: 2%;"> Quick Links </h4>
-      <a class="quickLinks" href="./index.html"> Home</a>
-      <a class="quickLinks" href="./menu.html"> Menu</a>
-      <a class="quickLinks" href="./about.html"> About</a>
-      <a class="quickLinks" href="./blog.html"> Blogs</a>
-      <a class="quickLinks" href="./contact.html"> Contacts</a>    </div>
-  </div>
-  <div class="visa">
-    <div style=" margin-left: 8%;"><i class="fa-regular fa-copyright"></i> <span style="color:#707279;"> 2022 Bakery by Toqa Mohamed</span></div>
-    <div style="margin-right:19%; color:#707279;"> we accept : &nbsp<span><img src="./images/visa.png" style="width: 26px;"></span> <span><img src="./images/master-card.png" style="width: 26px;"></span> <span><img src="./images/american-express.png" style="width: 26px;"></span> </div>
+
+    <div class="fifthPart">
+      <h1 style="display: flex; justify-content: center;"> Latest Blogs </h1>
+      <div class="textt">
+        <div class="leftone">
+          <div class="texxtt">
+            <h6
+              style="background-color: #ce3c83; width: 22%; color: white; margin-top: 60%; margin-left: 7%; padding-left: 5px; padding-right: px;">
+              March 10, 2020
+            </h6>
+            <h3 style="color: #fffff9; margin-top:5%; margin-left: 7%; opacity: 1;">
+              How to Make a Cake with Great Delicious Chocolate
+            </h3>
+          </div>
+        </div>
+        <div class="rigt">
+          <div class="one"> <img src="./images/postLong.jpg" alt=""></div>
+          <div class="two"><img src="./images/postLong.jpg" alt=""></div>
+        </div>
+      </div>
+      <a href="./blog.html">
+        <button class="button3">Reed More</button>
+      </a>
+    </div>
   </div>
 
-</footer>
+  <footer>
+    <div class="part1">
+      <div class="loggo" style="padding-left: 17%; padding-top: 2%; ">
+        <div class="footor-logo">
+          <img class="logoimg" src="./images/baker.png" alt="">
+        </div>
+        <div class="footor-logo">
+          <img class="logoimg" src="./images/bakery.png" alt="">
+        </div>
+        <div class="footor-logo">
+          <img class="logoimg" src="./images/thebakery.png" alt="">
+        </div>
+        <div class="footor-logo">
+          <img class="logoimg" src="./images/breadcookies.png" alt="">
+        </div>
+        <div class="footor-logo">
+          <img class="logoimg" src="./images/bakery.png" alt="">
+        </div>
+      </div>
+
+    </div>
+    <div class="part2">
+      <div class="sections sec1">
+        <img src="images/main-logo.png" alt="" />
+        <p class="parg"> You Can't be sad when You're Holding A Cup cake</p>
+      </div>
+      <div class="sections">
+        <h4 style="color: #ce3c83; ">Subscribe To Our Newletter </h4>
+        <div class="input-group mb-2">
+          <input type="email" class="form-control" placeholder="Your Email Address" aria-label="Your Email Address"
+            aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button"
+              style="background-color:#ce3c83 ; border: none; color: white;">Subscribe</button>
+          </div>
+        </div>
+        <h4 style="color: #ce3c83; padding-top: 9%; padding-bottom: 2%; ">Our Work Time</h4>
+        <div class="fot">
+          <div class="rig">
+            <p style="color: #484748;"> Monday - Friday </p>
+            <p style="color: #484748;">8:00am - 8:30 pm</p>
+          </div>
+          <div class="rig">
+            <p style="color: #484748;">Saturday - Sunday</p>
+            <p style="color: #484748;">10:00am - 16:00 pm </p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="sections">
+        <h4 style="color: #ce3c83; padding-top: 9%; padding-left: 40%; padding-bottom: 2%;"> Quick Links </h4>
+        <a class="quickLinks" href="./index.html"> Home</a>
+        <a class="quickLinks" href="./menu.html"> Menu</a>
+        <a class="quickLinks" href="./about.html"> About</a>
+        <a class="quickLinks" href="./blog.html"> Blogs</a>
+        <a class="quickLinks" href="./contact.html"> Contacts</a>
+      </div>
+    </div>
+    <div class="visa">
+      <div style=" margin-left: 8%;"><i class="fa-regular fa-copyright"></i> <span style="color:#707279;"> 2022 Bakery
+          by Toqa Mohamed</span></div>
+      <div style="margin-right:19%; color:#707279;"> we accept : &nbsp<span><img src="./images/visa.png"
+            style="width: 26px;"></span> <span><img src="./images/master-card.png" style="width: 26px;"></span>
+        <span><img src="./images/american-express.png" style="width: 26px;"></span>
+      </div>
+    </div>
+
+
+  </footer>
   <script src="index.js"></script>
 </body>
 
