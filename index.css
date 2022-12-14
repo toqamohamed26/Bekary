@@ -714,14 +714,27 @@ body {
     height: 100vh;
     overflow: hidden;
 }
-
+.menu-Banner {
+    background: url(./images/R\ \(3\).jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60vh;
+    overflow: hidden;
+}
 .about-heading {
     display: flex;
     justify-content: center;
     color: #ce3c83;
     padding-top: 20%;
 }
-
+.menu-heading {
+    display: flex;
+    justify-content: center;
+    color: #ce3c83;
+    padding-top: 8%;
+    font-size: 40px;
+}
 .mr-X {
     display: flex;
     justify-content: space-between;
@@ -1069,3 +1082,4 @@ body {
     font-size: 13px;
     padding-left: 40%;
 }
+

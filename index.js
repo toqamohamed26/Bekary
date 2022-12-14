@@ -221,3 +221,4 @@ function displayCart() {
   document.getElementById('allBody').style.display = 'none';
   document.getElementById('cart').style.display = 'block';
 }
+
