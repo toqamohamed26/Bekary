@@ -1048,10 +1048,9 @@ body {
     width: 40%;
 }
 
+
 .Name {
     display: block;
-    margin-top: 10%;
-    margin-bottom: 5%;
     font-size: 17px;
     color: #ce3c83;
 
@@ -1063,6 +1062,12 @@ body {
     color: #0e0a0c;
     font-size: 16px;
     margin-top: 5%;
+}
+.cartheading{
+    color: #c14983;
+    letter-spacing: 6px;
+    word-spacing: 10px;
+    padding-bottom: 5%;
 }
 
 .cartsection {

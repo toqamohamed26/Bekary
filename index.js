@@ -33,8 +33,9 @@ for (i = 0; i < incrementCount.length; i++) {
       <img class="productPic" id="productPic" src="${itemImage}" width="140" height="140" >
       <span class="price cartPrice">${itemPrice}<button onclick="deleteItem(this)" class='removeElement'><i class="fa-solid fa-trash"></i></button>
       </span>
-      
-    </div>`
+      <hr>
+    </div>
+    `
   })
 }
 /*<div class="totalPrice">
