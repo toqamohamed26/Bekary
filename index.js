@@ -20,10 +20,10 @@ for (i = 0; i < incrementCount.length; i++) {
     let cartContent = document.getElementById('cart');
 
 
-    window.localStorage.setItem('itemName', itemName);
-    document.getElementById("proName").innerHTML = localStorage.getItem("itemName");
-    console.log(window.localStorage)
-    console.log(window.localStorage.getItem('itemName'))
+    // window.localStorage.setItem('itemName', itemName);
+    // document.getElementById("proName").innerHTML = localStorage.getItem("itemName");
+    // console.log(window.localStorage)
+    // console.log(window.localStorage.getItem('itemName'))
 
 
     cartContent.innerHTML += `
@@ -33,13 +33,13 @@ for (i = 0; i < incrementCount.length; i++) {
       <img class="productPic" id="productPic" src="${itemImage}" width="140" height="140" >
       <span class="price cartPrice">${itemPrice}<button onclick="deleteItem(this)" class='removeElement'><i class="fa-solid fa-trash"></i></button>
       </span>
-      <div class="totalPrice">
-        <p class="total" id="total"> Total : ${total}</p> 
-      </div>
+      
     </div>`
   })
 }
-
+/*<div class="totalPrice">
+<p class="total" id="total"> Total : ${total}</p> 
+</div>*/
 
 function deleteItem(e) {
   e.parentElement.parentElement.remove()
