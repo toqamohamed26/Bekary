@@ -1043,7 +1043,6 @@ body {
 }
 
 .cartPart {
-    display: none; 
     float: left;
     margin-left: 3%;
     width: 40%;
